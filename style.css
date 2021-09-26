@@ -64,3 +64,21 @@ input {
   margin-top: 2rem;
   font-size: 1.5rem;
 }
+
+@media screen and(max-width:425px) {
+  .heading {
+    margin-top: 3rem;
+    font-size: 2rem;
+  }
+  label {
+    font-size: 1.3rem;
+  }
+  input {
+    width: 60%;
+    height: 7vh;
+  }
+  .btn {
+    margin-top: 2rem;
+    width: 22vw;
+  }
+}

@@ -135,7 +135,6 @@ function clickHandler() {
 
   if (bdayStr !== "") {
     var listOfDate = bdayStr.split("-");
-
     var date = {
       day: Number(listOfDate[2]),
       month: Number(listOfDate[1]),
@@ -148,6 +147,7 @@ function clickHandler() {
       output.innerText = "Yay! your birthday is a palindrome!!";
     } else {
       var [ctr, nextDate] = getNextPalindromeDate(date);
+
       output.innerText = `The next palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year}, you missed it by ${ctr} days!`;
     }
   }
